@@ -1,0 +1,126 @@
+.tour-programm
+  padding-top: 35px
+  @media (min-width: $tablet-width)
+    padding-top: 80px
+  @media (min-width: $desktop-width)
+    padding-top: 90px
+
+.tour-programm__header
+  text-align: center
+  margin-bottom: 70px
+  @media (min-width: $tablet-width)
+    margin-bottom: 160px
+
+.tour-programm__title
+  margin: 0
+  margin-bottom: 20px
+  padding: 0
+
+.tour-programm__shortcut
+  max-width: 908px
+  @media (min-width: $tablet-width)
+    margin: 0 auto
+
+.tour-details__list
+  margin: 0
+  padding: 0
+  list-style: none
+  @media (min-width: $desktop-width)
+    padding:
+      top: 3px
+      left: 16px
+      right: 20px
+
+.tour-details__item
+  text-align: center
+  margin-bottom: 40px
+  &:last-of-type
+    margin-bottom: 0
+  @media (min-width: $tablet-width)
+    display: flex
+    align-items: center
+    justify-content: space-between
+    &:nth-of-type(even)
+      .tour-details__image
+        order: 0
+      .tour-details__description
+        order: 1
+        padding-right: 25px
+        padding-left: 0
+  @media (min-width: $desktop-width)
+    .tour-details__description
+      padding-left: 75px
+    &:nth-of-type(even)
+      .tour-details__description
+        padding-top: 60px
+        flex: 0 1 623px
+    &:nth-of-type(1)
+      margin-bottom: 60px
+    &:nth-of-type(2)
+      margin-bottom: 121px
+    &:nth-of-type(3)
+      margin-bottom: 137px
+    &:nth-of-type(4)
+      margin-bottom: 128px
+    &:nth-of-type(5)
+      margin-bottom: 148px
+    &:nth-of-type(6)
+      margin-bottom: 103px
+    &:nth-of-type(7)
+      margin-bottom: 120px
+    &:nth-of-type(8)
+      margin-bottom: 115px
+    &:nth-of-type(9)
+      margin-bottom: 139px
+
+      
+
+.tour-details__description
+  @media (min-width: $tablet-width)
+    flex: 0 1 calc(60% - 20px)
+    padding-left: 25px
+  @media (min-width: $desktop-width)
+    flex: 0 1 712px
+
+.tour-details__name
+  position: relative
+  margin: 0
+  margin-bottom: 20px
+  padding: 0
+  display: flex
+  align-items: center
+  @media (min-width: $desktop-width)
+    margin-bottom: 30px
+
+.tour-details__text
+  text-align: left
+  margin-bottom: 20px
+
+.tour-details__timetable
+  margin: 0
+  margin-bottom: 20px
+  padding: 0
+  list-style: none
+  text-align: left
+
+.tour-details__todo
+  font-style: italic
+  font-size: 0.937rem
+  line-height: 2
+  letter-spacing: 0.01em
+  color: #696969
+
+.tour-details__counter
+  display: flex
+  justify-content: center
+  align-items: center
+  flex-shrink: 0
+  width: 51px
+  height: 43px
+  color: #ffffff
+  margin-right: 10px
+  background: url('../assets/img/programm-ellipse.svg') no-repeat center
+
+.tour-details__image
+  @media (min-width: $desktop-width)
+    flex-basis: 495px

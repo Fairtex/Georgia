@@ -1,0 +1,108 @@
+.tour-composition
+  padding-top: 50px
+  margin-bottom: 50px
+  @media (min-width: $tablet-width)
+    padding-top: 80px
+  @media (min-width: $desktop-width)
+    padding-top: 208px
+
+.tour-composition__layout
+  @media (min-width: $desktop-width)
+    display: flex
+    justify-content: space-between
+  @media (min-width: 1300px)
+    padding-right: 5.55vw
+    padding-left: 1vw
+
+.tour-composition__title-block
+  margin-bottom: 35px
+  @media (min-width: $desktop-width)
+    flex: 0 0 196px
+
+.tour-composition__suptitle
+  text-align: center
+  @media (min-width: $desktop-width)
+    text-align: left
+
+.tour-composition__title
+  margin: 0
+  padding: 0
+  text-align: center
+  @media (min-width: $desktop-width)
+    text-align: left
+
+.tour-composition__content
+  @media (min-width: $desktop-width)
+    flex: 0 1 850px
+    padding-top: 15px
+
+.tour-composition__list
+  margin: 0
+  padding: 0
+  list-style: none
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-between
+  @media (min-width: $desktop-width)
+    flex-direction: column
+    justify-content: flex-start
+    align-items: flex-start
+    height: 1134px
+
+.tour-composition__item
+  margin-bottom: 15px
+  @media (min-width: $tablet-width)
+    width: calc(100%/2 - 20px)
+    text-align: center
+    margin-bottom: 25px
+  @media (min-width: $desktop-width)
+    text-align: left
+    width: 355px
+    margin-right: 9.7vw
+    margin-bottom: 0
+    &:nth-of-type(even)
+      margin-right: 0
+    &:nth-of-type(1)
+      order: 0
+      margin-bottom: 48px
+    &:nth-of-type(2)
+      order: 3
+      margin-bottom: 55px
+    &:nth-of-type(3)
+      order: 1
+      margin-bottom: 39px
+    &:nth-of-type(4)
+      order: 4
+      margin-bottom: 53px
+    &:nth-of-type(5)
+      order: 2 
+    &:nth-of-type(6)
+      order: 5 
+
+
+.tour-composition__icon-block
+  margin: 0
+  margin-bottom: 18px
+  position: relative
+  width: 52px
+  height: 57px
+  background: url('../assets/img/hexagon.svg') no-repeat center
+  @media (min-width: $tablet-width)
+    margin: 0 auto
+    margin-bottom: 10px
+  @media (min-width: $desktop-width)
+    margin: 0
+    margin-bottom: 17px
+
+.tour-composition__icon
+  position: absolute
+  top: 50%
+  left: 50%
+  transform: translate(-50%, -50%)
+
+.tour-composition__name
+  margin: 0
+  margin-bottom: 15px
+  padding: 0
+  @media (min-width: $desktop-width)
+    margin-bottom: 25px

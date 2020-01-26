@@ -1,0 +1,163 @@
+.header-preview
+  padding-top: 25px
+  @media (min-width: $tablet-width)
+    padding-top: 50px
+    display: flex
+  @media (min-width: $desktop-width)
+    padding-top: 83px
+    justify-content: space-between
+
+.header-preview__info
+  margin-bottom: 55px
+  @media (min-width: $tablet-width)
+    margin-bottom: 0
+  @media (min-width: $desktop-width)
+    padding-top: 33px
+    padding-left: 75px
+
+.header-preview__title
+  margin: 0
+  margin-bottom: 10px
+  padding: 0
+  color: #ffffff
+  font-size: 1.625rem
+  font-weight: bold
+  line-height: 1.15
+  &--bold
+    display: block
+    margin-bottom: 25px
+    font-size: 4.5rem
+    font-weight: 900
+    line-height: 1.17
+    @media (min-width: $tablet-width)
+      margin-bottom: 44px
+    @media (min-width: $desktop-width)
+      font-size: 6.25rem
+      letter-spacing: 5px
+      margin-bottom: 75px
+
+.header-preview__logo
+  width: 40px
+  height: 40px
+  @media (min-width: $tablet-width)
+    width: 58px
+    height: 58px
+    margin-left: 20px
+  @media (min-width: $desktop-width)
+    margin-left: 5px
+
+.header-preview__text
+  margin: 0
+  padding: 0
+  font-size: 1.125rem
+  line-height: 1.78
+  color: #ffffff
+
+.header-preview__form-block
+  position: relative
+  width: 100%
+  max-width: 400px
+  margin: 0 auto
+  @media (min-width: $desktop-width)
+    margin: 0
+    width: 553px
+    min-height: 567px
+    max-width: 100%
+
+.header-preview__sale
+  position: absolute
+  top: -50px
+  right: -15px
+  z-index: 5
+  margin: 0
+  border-radius: 50%
+  @media (min-width: $desktop-width)
+    top: 0
+    right: 0
+
+.header-preview__ellipse
+  width: 100px
+  height: 100px
+  @media (min-width: $tablet-width)
+    width: 140px
+    height: 140px
+  @media (min-width: $desktop-width)
+    width: 154px
+    height: 154px
+
+.header-preview__sale-text
+  position: absolute
+  top: 50%
+  left: 50%
+  width: 100%
+  text-align: center
+  transform: translate(-50%, -50%)
+  font-size: 1.125rem
+  font-weight: 500
+  letter-spacing: 0.01em
+  color: #ffffff
+  &--big
+    display: block
+    font-size: 2.18rem
+    line-height: 1.43
+  &--small
+    display: block
+    font-size: 1rem
+    font-weight: normal
+    @media (min-width: $tablet-width)
+      padding: 0 25px
+
+.header-form
+  background-color: #ffffff
+  border-radius: 10px
+  box-shadow: 0px 0px 32px rgba(85, 85, 85, 0.25)
+  padding: 35px 20px
+  @media (min-width: $desktop-width)
+    position: absolute
+    left: 0
+    bottom: 0
+    width: 475px
+    min-height: 490px
+    padding:
+      top: 47px 
+      left: 40px
+      bottom: 40px
+      right: 40px
+
+.header-form__title
+  display: block
+  margin: 0
+  margin-bottom: 9px
+  padding: 0
+  font-size: 1.625rem
+  font-weight: bold
+  line-height: 1.23
+  letter-spacing: 0.01em
+
+.header-form__description
+  display: block
+  font-size: 1rem
+  line-height: 1.31
+  color: #AAB2C0
+  letter-spacing: 0.01em
+  margin-bottom: 35px
+
+.header-form__input-block
+  position: relative
+  margin-top: 11px
+  margin-bottom: 20px
+  &:last-of-type
+    margin-bottom: 30px
+  @media (min-width: $desktop-width)
+    margin-bottom: 30px
+    &:last-of-type
+      margin-bottom: 47px
+
+.header-form__icon
+  position: absolute
+  left: 10px
+  top: 10px
+  z-index: 5
+  @media (min-width: $tablet-width)
+    left: 20px
+    top: 20px

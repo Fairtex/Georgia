@@ -1,7 +1,149 @@
-.page-header
-  width: 650px
+$main-font: 'Roboto', sans-serif
+$main-color: #2E2E2E
+
+$tablet-width: 768px
+$desktop-width: 1100px
+$mobile-width-only: 767px
+
+html
+  box-sizing: border-box
+  font-size: 12px
+  @media (min-width: $tablet-width)
+    font-size: 14px
+  @media (min-width: $desktop-width)
+    font-size: 16px
+
+*,
+*::before,
+*::after
+  box-sizing: inherit
+
+img
+  max-width: 100%
+  height: auto
+
+body
+  position: relative
+  margin: 0
+  padding: 0
+  max-width: 100%
+  min-width: 320px
+  overflow-x: hidden
+  font-family: $main-font
+  font-weight: normal
+  font-size: 1rem
+  color: $main-color
+
+.visually-hidden
+  position: absolute
+  width: 1px
+  height: 1px
+  margin: -1px
+  border: 0
+  padding: 0
+  white-space: nowrap
+  clip-path: inset(100%)
+  clip: rect(0 0 0 0)
+  overflow: hidden
+
+.container
+  width: 100%
   margin: 0 auto
-  background-color: red
-  h1
-    color: blue
-    font-size: 55px
+  padding: 0 20px
+  @media (min-width: $tablet-width)
+    padding: 0 25px
+  @media (min-width: $desktop-width)
+    max-width: 1285px
+    padding: 0 10px
+
+.page-main
+  overflow-x: hidden
+
+.form-btn
+  border: none
+  border-radius: 16px
+  padding-top: 14px
+  padding-bottom: 12px
+  background: linear-gradient(97.97deg, #ECB915 0%, #F47D16 100%), #FFC816
+  text-align: center
+  font-size: 1.25rem
+  font-weight: bold
+  line-height: 1.15
+  letter-spacing: 0.1em
+  text-transform: uppercase
+  color: #FFFFFF
+  width: 100%
+  &:hover
+    background: linear-gradient(97.97deg, #E5A509 0%, #E4650C 100%), #FFC816
+  &:active
+    background: linear-gradient(97.97deg, #E5A509 0%, #E4650C 100%), #FFC816
+
+.form-label
+  font-size: 1rem
+  font-weight: 500
+  line-height: 1.31
+  letter-spacing: 0.05em
+  text-transform: uppercase
+
+.form-input
+  width: 100%
+  border: 1px solid #D9DEE8
+  border-radius: 10px
+  padding: 10px 35px
+  font-size: 1rem
+  line-height: 1.31
+  letter-spacing: 0.01em
+  &::placeholder
+    color: #AAB2C0
+  &:hover
+    border-color: #ECB915
+  @media (min-width: $desktop-width)
+    padding:
+      top: 18px
+      bottom: 18px
+      left: 64px
+      right: 25px
+
+.js-form-input-error
+  border-color: #D80027
+
+.suptitle
+  display: block
+  font-size: 1.125rem
+  font-weight: bold
+  line-height: 2.78
+  letter-spacing: 0.05em
+  text-transform: uppercase
+  color: #C0C0C0
+
+.title
+  font-size: 2rem
+  font-weight: bold
+  line-height: 1.56
+  letter-spacing: 0.01em
+
+.description-text
+  margin: 0
+  padding: 0
+  font-size: 1.125rem
+  line-height: 1.67
+  color: #696969
+
+.item-name
+  font-size: 1.5rem
+  font-weight: bold
+  line-height: 1.46
+  letter-spacing: 0.01em
+
+.icon-focused
+  fill: #FFC816
+  
+@import "components/header"
+@import "components/header-preview"
+@import "components/brief"
+@import "components/travel-block"
+@import "components/tour-composition"
+@import "components/note"
+@import "components/tour-programm"
+@import "components/book-tour"
+@import "components/footer"

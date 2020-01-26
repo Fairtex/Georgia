@@ -1,0 +1,46 @@
+.brief-desc
+  padding-top: 45px
+  font-size: 1.125rem
+  line-height: 1.67
+  text-align: center
+  @media (min-width: $tablet-width)
+    padding-top: 80px
+  @media (min-width: $desktop-width)
+    padding-top: 110px
+
+.brief-desc__discount
+  font-size: 2rem
+  font-weight: bold
+  line-height: 1.62
+  letter-spacing: 0.01em
+  text-align: center
+  margin-bottom: 20px
+  &--sale
+    display: inline-block
+    background-color: #FFC816
+    border-radius: 1px
+  &--old
+    display: inline-block
+    position: relative
+    color: #C2C2C2
+    &::before
+      content: ''
+      position: absolute
+      top: 40%
+      left: -5px
+      width: 105%
+      height: 10px
+      background: url('../assets/img/line.svg') no-repeat center
+  @media (min-width: $tablet-width)
+    max-width: 867px
+    margin:
+      bottom: 42px
+      top: 0
+      left: auto
+      right: auto
+
+.brief-desc__text
+  text-align: center
+  @media (min-width: $tablet-width)
+    max-width: 758px
+    margin: 0 auto

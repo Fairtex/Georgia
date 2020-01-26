@@ -1,0 +1,63 @@
+.note
+  min-height: 364px
+  padding-top: 30px
+  background: url('../assets/img/note-bg-mobile.jpg') no-repeat top center
+  background-size: cover
+  @media (min-width: $tablet-width)
+    padding-top: 160px
+    background: url('../assets/img/note-bg-tablet.jpg') no-repeat top center
+    min-height: 600px
+    background-size: cover
+  @media (min-width: $desktop-width)
+    padding-top: 239px
+    background: url('../assets/img/note-bg-desktop.jpg') no-repeat top center
+    min-height: 908px
+    background-size: cover
+  @media (min-width: 1800px)
+    background: url('../assets/img/note-bg-desktop-large.jpg') no-repeat top center
+    background-size: cover
+
+.note__discount
+  width: 85%
+  margin: 0 auto
+  max-width: 360px
+  text-align: center
+  padding: 25px 20px
+  background-color: #ffffff
+  border-radius: 16px
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2)
+  @media (min-width: $tablet-width)
+    width: 521px
+    max-width: 521px
+    padding:
+      top: 32px
+      bottom: 45px
+      left: 60px
+      right: 60px
+
+.note__title
+  display: block
+  text-align: center
+
+.note__title-text
+  display: block
+  margin: 10px 0
+  font-size: 3rem
+  font-weight: 900
+  line-height: 1.1
+  letter-spacing: 0.01em
+  text-transform: uppercase
+  
+
+.note__title-text--gradient
+  color: #FFC816
+  background: linear-gradient(97.97deg, #ECB915 0%, #F47D16 100%)
+  background-clip: text
+  -webkit-text-fill-color: transparent
+
+.note__description
+  text-align: center
+  margin-bottom: 20px
+  @media (min-width: $tablet-width)
+    margin-bottom: 43px
+
