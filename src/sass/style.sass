@@ -93,6 +93,8 @@ body
   font-size: 1rem
   line-height: 1.31
   letter-spacing: 0.01em
+  color: $main-color
+  outline: none
   &::placeholder
     color: #AAB2C0
   &:hover
@@ -103,9 +105,9 @@ body
       bottom: 18px
       left: 64px
       right: 25px
-
-.js-form-input-error
-  border-color: #D80027
+  &:focus
+    border-color: #ECB915
+    background-color: transparent
 
 .suptitle
   display: block
@@ -134,9 +136,6 @@ body
   font-weight: bold
   line-height: 1.46
   letter-spacing: 0.01em
-
-.icon-focused
-  fill: #FFC816
   
 @import "components/header"
 @import "components/header-preview"
@@ -147,3 +146,4 @@ body
 @import "components/tour-programm"
 @import "components/book-tour"
 @import "components/footer"
+@import "components/js-styles"
