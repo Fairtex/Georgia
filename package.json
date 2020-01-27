@@ -33,5 +33,8 @@
   "scripts": {
     "build": "gulp build",
     "start": "gulp start"
+  },
+  "dependencies": {
+    "imask": "^6.0.1"
   }
 }

@@ -15,6 +15,7 @@ const del = require("del");
 const posthtml = require("gulp-posthtml");
 const svgstore = require("gulp-svgstore");
 const include = require("posthtml-include");
+const babel = require("gulp-babel");
 
 gulp.task("css", function () {
   return gulp.src("src/sass/style.sass")
@@ -31,6 +32,14 @@ gulp.task("css", function () {
     .pipe(server.stream());
 });
 
+gulp.task("js", function () {
+  return gulp.src('src/js/script.js')
+    .pipe(babel({
+      presets: ['@babel/env']
+    }))
+    .pipe(gulp.dest('build/js/'));
+});
+
 gulp.task("server", function () {
   server.init({
     server: "build/",
@@ -42,6 +51,7 @@ gulp.task("server", function () {
 
   gulp.watch("src/sass/**/*.sass", gulp.series("css"));
   gulp.watch("src/index.html", gulp.series("refresh"));
+  gulp.watch("src/js/script.js", gulp.series("js","refresh"));
 });
 
 gulp.task("images", function () {
@@ -101,5 +111,5 @@ gulp.task("refresh", function (done) {
   done();
 });
 
-gulp.task("build", gulp.series("clean", "copy", "sprite", "html", "css", "server"));
+gulp.task("build", gulp.series("clean", "copy", "sprite", "html", "css", "js", "server"));
 gulp.task("start", gulp.series("css", "server"));
