@@ -34,7 +34,7 @@
                 <div class="header-preview__info">
                     <h1 class="header-preview__title">
                         <span class="header-preview__title--bold">Грузия
-                                <img src="assets/img/georgia.png" alt="Грузия" class="header-preview__logo">
+                            <img src="assets/img/georgia.png" alt="Грузия" class="header-preview__logo">
                         </span>
                         Тур все включено
                     </h1>
@@ -51,7 +51,7 @@
                             <span class="header-preview__sale-text--small">на второго человека</span>
                         </div>
                     </div>
-                    <form action="#" class="header-form">
+                    <form action="#" class="header-form js-form js-header-form">
                         <strong class="header-form__title">
                             Консультация по туру
                         </strong>
@@ -62,21 +62,21 @@
                             Имя
                         </label>
                         <div class="header-form__input-block header-form__input-block--name">
-                            <svg width="16" height="16" class="header-form__icon header-form__icon--user">
+                            <svg width="16" height="16" class="header-form__icon header-form__icon--user js-form-icon">
                                 <use xlink:href="#icon-user"></use>
                             </svg>
                             <input type="text" name="user-name" id="header-form-name"
-                                class="header-form__input form-input" placeholder="Как Вас зовут?" required>
+                                class="header-form__input form-input js-input-name" placeholder="Как Вас зовут?">
                         </div>
                         <label for="header-form-tel" class="header-form__label form-label">
                             Телефон
                         </label>
                         <div class="header-form__input-block header-form__input-block--tel">
-                            <svg width="16" height="16" class="header-form__icon header-form__icon--tel">
+                            <svg width="16" height="16" class="header-form__icon header-form__icon--tel js-form-icon">
                                 <use xlink:href="#icon-tel"></use>
                             </svg>
                             <input type="tel" name="user-name" id="header-form-tel"
-                                class="header-form__input form-input" placeholder="Номер телефона" required>
+                                class="header-form__input form-input js-input-tel" placeholder="Номер телефона">
                         </div>
                         <button type="submit" class="header-form__submit form-btn">Перезвоните мне</button>
                     </form>
@@ -301,412 +301,406 @@
                     <p class="tour-programm__shortcut description-text">
                         За эти 9 дней ты увидишь максимум — и места, которые «обязательно посмотреть», и
                         нетуристические.<span class="separator"></span>
-                        Ту сторону Грузии, которую не показывают обычные гиды. Но ту, которая является душой<span
-                            class="separator"></div>
-                        Грузии в гораздо большей степени, чем места для туристов :)
-                    </p>
-                </header>
-                <article class="tour-details">
-                    <ul class="tour-details__list">
-                        <li class="tour-details__item">
-                            <div class="tour-details__description">
-                                <h3 class="tour-details__name item-name">
-                                    <span class="tour-details__counter">
-                                        1
-                                    </span>
-                                    Подготовка
-                                </h3>
-                                <p class="tour-details__text description-text">
-                                    Мы заранее создадим чат вконтакте для участников тура, в котором все смогут
-                                    познакомиться и получить всю необходимую информацию. Сбор участников происходит в
-                                    аэропорту вылета города Москвы
-                                </p>
-                            </div>
-                            <picture>
-                                <source type="image/webp" media="(min-width: 1100px)"
-                                    srcset="assets/img/lead-up-desktop.webp">
-                                <source type="image/webp" media="(min-width: 768px)"
-                                    srcset="assets/img/lead-up-tablet.webp">
-                                <source type="image/webp" srcset="assets/img/lead-up-mobile.webp">
-                                <source media="(min-width: 1100px)" srcset="assets/img/lead-up-desktop.png">
-                                <source media="(min-width: 768px)" srcset="assets/img/lead-up-tablet.png">
-                                <img src="assets/img/lead-up-mobile.png" alt="Документы" class="tour-details__image">
-                            </picture>
-                        </li>
-                        <li class="tour-details__item">
-                            <div class="tour-details__description">
-                                <h3 class="tour-details__name item-name">
-                                    <span class="tour-details__counter">
-                                        2
-                                    </span>
-                                    Встреча в Тбилиси
-                                </h3>
-                                <ul class="tour-details__timetable">
-                                    <li class="tour-details__todo">
-                                        Утро: аэропорт Шота Руставели-отель Flamingo Hotel 3*
-                                    </li>
-                                    <li class="tour-details__todo">
-                                        День: «Старый город», парк Рике, мост Мира, крепость Нарикала, ресторан
-                                        «Маспендзелло».
-                                    </li>
-                                    <li class="tour-details__todo">
-                                        Ночь: Flamingo Hotel 3*
-                                    </li>
-                                </ul>
-                                <p class="tour-details__text description-text">
-                                    Готовы к идеальному отпуску? Тогда начинаем! Отдохнем после перелета и отправимся на
-                                    первую прогулку по городу. Лучший вид
-                                    на столицу открывается здесь с горы Мтацминда.
-                                </p>
-                            </div>
-                            <picture>
-                                <source type="image/webp" media="(min-width: 1100px)"
-                                    srcset="assets/img/meeting-desktop.webp">
-                                <source type="image/webp" media="(min-width: 768px)"
-                                    srcset="assets/img/meeting-tablet.webp">
-                                <source type="image/webp" srcset="assets/img/meeting-mobile.webp">
-                                <source media="(min-width: 1100px)" srcset="assets/img/meeting-desktop.png">
-                                <source media="(min-width: 768px)" srcset="assets/img/meeting-tablet.png">
-                                <img src="assets/img/meeting-mobile.png" alt="Встреча" class="tour-details__image">
-                            </picture>
-                        </li>
-                        <li class="tour-details__item">
-                            <div class="tour-details__description">
-                                <h3 class="tour-details__name item-name">
-                                    <span class="tour-details__counter">
-                                        3
-                                    </span>
-                                    Экскурсии по городу
-                                </h3>
-                                <ul class="tour-details__timetable">
-                                    <li class="tour-details__todo">
-                                        Утро: завтрак при отеле Flamingo Hotel 3*
-                                    </li>
-                                    <li class="tour-details__todo">
-                                        День: собор Цминда Самеба, Сололаки, Серные бани, Клдисубани, Церковь Метехи,
-                                        Сурб Геворк Екегетси и др.
-                                    </li>
-                                    <li class="tour-details__todo">
-                                        Ночь: Flamingo Hotel 3*
-                                    </li>
-                                </ul>
-                                <p class="tour-details__text description-text">
-                                    Второй день в Тбилиси станет очень богатым на эмоции. Мы будем гулять и
-                                    фотографировать город. Вы удивитесь, насколько вдохновляющими могут быть архитектура
-                                    города и его жители. Экскурсия с гидом подарит массу впечатлений и новые знания.
-                                </p>
-                            </div>
-                            <picture>
-                                <source type="image/webp" media="(min-width: 1100px)"
-                                    srcset="assets/img/excursion-desktop.webp">
-                                <source type="image/webp" media="(min-width: 768px)"
-                                    srcset="assets/img/excursion-tablet.webp">
-                                <source type="image/webp" srcset="assets/img/excursion-mobile.webp">
-                                <source media="(min-width: 1100px)" srcset="assets/img/excursion-desktop.png">
-                                <source media="(min-width: 768px)" srcset="assets/img/excursion-tablet.png">
-                                <img src="assets/img/excursion-mobile.png" alt="Экскурсии" class="tour-details__image">
-                            </picture>
-                        </li>
-                        <li class="tour-details__item">
-                            <div class="tour-details__description">
-                                <h3 class="tour-details__name item-name">
-                                    <span class="tour-details__counter">
-                                        4
-                                    </span>
-                                    Дорога в горы!
-                                </h3>
-                                <ul class="tour-details__timetable">
-                                    <li class="tour-details__todo">
-                                        Утро: завтрак при отеле Flamingo Hotel 3*
-                                    </li>
-                                    <li class="tour-details__todo">
-                                        День: город Мцхета, храм Светицховели, монастырь Джвари, Военно-Грузинская
-                                        дорога, крепость Ананури, Жинвальское водохранилище, Крестовый перевал, Арка
-                                        Дружбы народов, долина Сно.
-                                    </li>
-                                    <li class="tour-details__todo">
-                                        Ночь: Hotel Sno Kazbegi 4*
-                                    </li>
-                                </ul>
-                                <p class="tour-details__text description-text">
-                                    Хотите убедиться, что ваши возможности безграничны? Третий день нашей поездки убедит
-                                    вас в этом. Ведь мы будем покорять сложный маршрут по Военно-Грузинской дороге. Нас
-                                    ждут завораживающие горные пейзажи, уникальная архитектура и захватывающие дух
-                                    ущелья. Мы посетим Мцхету – древнейший город Грузии.
-                                </p>
-                            </div>
-                            <picture>
-                                <source type="image/webp" media="(min-width: 1100px)"
-                                    srcset="assets/img/mountains-desktop.webp">
-                                <source type="image/webp" media="(min-width: 768px)"
-                                    srcset="assets/img/mountains-tablet.webp">
-                                <source type="image/webp" srcset="assets/img/mountains-mobile.webp">
-                                <source media="(min-width: 1100px)" srcset="assets/img/mountains-desktop.png">
-                                <source media="(min-width: 768px)" srcset="assets/img/mountains-tablet.png">
-                                <img src="assets/img/mountains-mobile.png" alt="Дорога в горы"
-                                    class="tour-details__image">
-                            </picture>
-                        </li>
-                        <li class="tour-details__item">
-                            <div class="tour-details__description">
-                                <h3 class="tour-details__name item-name">
-                                    <span class="tour-details__counter">
-                                        5
-                                    </span>
-                                    Приключения на джипах
-                                </h3>
-                                <ul class="tour-details__timetable">
-                                    <li class="tour-details__todo">
-                                        Утро: завтрак при отеле Hotel Sno Kazbegi 4*
-                                    </li>
-                                    <li class="tour-details__todo">
-                                        День: долина Сно, деревня Джута, гора Чаухи, Zeta Camping.
-                                    </li>
-                                    <li class="tour-details__todo">
-                                        Ночь: Hotel Sno Kazbegi 4*
-                                    </li>
-                                </ul>
-                                <p class="tour-details__text description-text">
-                                    Настоящее приключение для любопытных и бесстрашных путешественников! В четвертый
-                                    день нашей поездки вы получите противоположные по полярности эмоции. Подъем на
-                                    джипах до высокогорного поселка Джута будет проходить по дороге, вьющейся над
-                                    ущельем.
-                                </p>
-                            </div>
-                            <picture>
-                                <source type="image/webp" media="(min-width: 1100px)"
-                                    srcset="assets/img/jeep-adv-desktop.webp">
-                                <source type="image/webp" media="(min-width: 768px)"
-                                    srcset="assets/img/jeep-adv-tablet.webp">
-                                <source type="image/webp" srcset="assets/img/jeep-adv-mobile.webp">
-                                <source media="(min-width: 1100px)" srcset="assets/img/jeep-adv-desktop.png">
-                                <source media="(min-width: 768px)" srcset="assets/img/jeep-adv-tablet.png">
-                                <img src="assets/img/jeep-adv-mobile.png" alt="Приключения на джипах"
-                                    class="tour-details__image">
-                            </picture>
-                        </li>
-                        <li class="tour-details__item">
-                            <div class="tour-details__description">
-                                <h3 class="tour-details__name item-name">
-                                    <span class="tour-details__counter">
-                                        6
-                                    </span>
-                                    С видом на велий Казбек
-                                </h3>
-                                <ul class="tour-details__timetable">
-                                    <li class="tour-details__todo">
-                                        Утро: завтрак при отеле Hotel Sno Kazbegi 4*
-                                    </li>
-                                    <li class="tour-details__todo">
-                                        День: Степанцминда, храм Святой Троицы, долина горы Казбек, Rooms Hotel
-                                    </li>
-                                    <li class="tour-details__todo">
-                                        Ночь: Flamingo Hotel 3*
-                                    </li>
-                                </ul>
-                                <p class="tour-details__text description-text">
-                                    Редкие моменты в жизни хочется остановить. Пятый день нашего фототура даст нам такую
-                                    возможность. Сразу после завтрака мы отправимся в апарт-отель Rooms. Отсюда
-                                    открывается немыслимый вид на гору Казбек. Это основная причина, по которой сюда
-                                    съезжаются туристы со всех стран.
-                                </p>
-                            </div>
-                            <picture>
-                                <source type="image/webp" media="(min-width: 1100px)"
-                                    srcset="assets/img/kazbek-desktop.webp">
-                                <source type="image/webp" media="(min-width: 768px)"
-                                    srcset="assets/img/kazbek-tablet.webp">
-                                <source type="image/webp" srcset="assets/img/kazbek-mobile.webp">
-                                <source media="(min-width: 1100px)" srcset="assets/img/kazbek-desktop.png">
-                                <source media="(min-width: 768px)" srcset="assets/img/kazbek-tablet.png">
-                                <img src="assets/img/kazbek-mobile.png" alt="Гора Казбек" class="tour-details__image">
-                            </picture>
-                        </li>
-                        <li class="tour-details__item">
-                            <div class="tour-details__description">
-                                <h3 class="tour-details__name item-name">
-                                    <span class="tour-details__counter">
-                                        7
-                                    </span>
-                                    Отдыхаем после гор и отправляемся в Батуми
-                                </h3>
-                                <ul class="tour-details__timetable">
-                                    <li class="tour-details__todo">
-                                        Утро: завтрак в грузинском кафе
-                                    </li>
-                                    <li class="tour-details__todo">
-                                        День: гуляем по Тбилиси, едем в Батуми на двухэтажном поезде.
-                                    </li>
-                                    <li class="tour-details__todo">
-                                        Ночь: Daisi Sunset Hotel 3*
-                                    </li>
-                                </ul>
-                                <p class="tour-details__text description-text">
-                                    Этот день мы решили сделать свободным. После завтрака в уютном грузинском кафе у вас
-                                    будет свободное время, чтобы купить сувениры, погулять по городу и насладиться
-                                    прекрасной погодой. Вечером в 17:30 мы садимся на двухэтажный скоростной поезд до
-                                    Батуми.
-                                </p>
-                            </div>
-                            <picture>
-                                <source type="image/webp" media="(min-width: 1100px)"
-                                    srcset="assets/img/relaxation-desktop.webp">
-                                <source type="image/webp" media="(min-width: 768px)"
-                                    srcset="assets/img/relaxation-tablet.webp">
-                                <source type="image/webp" srcset="assets/img/relaxation-mobile.webp">
-                                <source media="(min-width: 1100px)" srcset="assets/img/relaxation-desktop.png">
-                                <source media="(min-width: 768px)" srcset="assets/img/relaxation-tablet.png">
-                                <img src="assets/img/relaxation-mobile.png" alt="Отдых" class="tour-details__image">
-                            </picture>
-                        </li>
-                        <li class="tour-details__item">
-                            <div class="tour-details__description">
-                                <h3 class="tour-details__name item-name">
-                                    <span class="tour-details__counter">
-                                        8
-                                    </span>
-                                    В радушном Батуми
-                                </h3>
-                                <ul class="tour-details__timetable">
-                                    <li class="tour-details__todo">
-                                        Утро: Завтрак при отеле Daisi Sunset Hotel 3*
-                                    </li>
-                                    <li class="tour-details__todo">
-                                        День: Исследуем город, катаемся на яхте
-                                    </li>
-                                    <li class="tour-details__todo">
-                                        Ночь: Daisi Sunset Hotel 3*
-                                    </li>
-                                </ul>
-                                <p class="tour-details__text description-text">
-                                    Романтичный, энергичный, толерантный, с выходом к морю и просто созданный для
-                                    стрит-съемки. Батуми мы откроем с разных сторон. Здесь будет море, солнце,
-                                    доброжелательные улыбки, вкусная еда и бирюзовые волны. Город контрастов сам
-                                    подскажет вам лучшие сюжеты для фото. Гуляйте, ищите, всматривайтесь и влюбляйтесь в
-                                    этот безумно контрастный город.
-                                </p>
-                            </div>
-                            <picture>
-                                <source type="image/webp" media="(min-width: 1100px)"
-                                    srcset="assets/img/batumi-desktop.webp">
-                                <source type="image/webp" media="(min-width: 768px)"
-                                    srcset="assets/img/batumi-tablet.webp">
-                                <source type="image/webp" srcset="assets/img/batumi-mobile.webp">
-                                <source media="(min-width: 1100px)" srcset="assets/img/batumi-desktop.png">
-                                <source media="(min-width: 768px)" srcset="assets/img/batumi-tablet.png">
-                                <img src="assets/img/batumi-mobile.png" alt="Батуми" class="tour-details__image">
-                            </picture>
-                        </li>
-                        <li class="tour-details__item">
-                            <div class="tour-details__description">
-                                <h3 class="tour-details__name item-name">
-                                    <span class="tour-details__counter">
-                                        9
-                                    </span>
-                                    Закрывающий, но не последний
-                                </h3>
-                                <ul class="tour-details__timetable">
-                                    <li class="tour-details__todo">
-                                        Утро: завтрак при отеле Daisi Sunset Hotel 3*
-                                    </li>
-                                    <li class="tour-details__todo">
-                                        День: Батумский ботанический сад, свободный вечер.
-                                    </li>
-                                    <li class="tour-details__todo">
-                                        Ночь: Daisi Sunset Hotel 3*
-                                    </li>
-                                </ul>
-                                <p class="tour-details__text description-text">
-                                    В этот день мы отправимся в Батумский ботанический сад — уникальное место с
-                                    реликтовыми деревьями, он станет настоящим откровением для любителей природы. Сад
-                                    расположен в 9 км от Батуми. Это не так далеко, но впечатлений масса. Еще с
-                                    советских времен этот парк считается крупнейшим.
-                                </p>
-                            </div>
-                            <picture>
-                                <source type="image/webp" media="(min-width: 1100px)"
-                                    srcset="assets/img/garden-desktop.webp">
-                                <source type="image/webp" media="(min-width: 768px)"
-                                    srcset="assets/img/garden-tablet.webp">
-                                <source type="image/webp" srcset="assets/img/garden-mobile.webp">
-                                <source media="(min-width: 1100px)" srcset="assets/img/garden-desktop.png">
-                                <source media="(min-width: 768px)" srcset="assets/img/garden-tablet.png">
-                                <img src="assets/img/garden-mobile.png" alt="Сад" class="tour-details__image">
-                            </picture>
-                        </li>
-                        <li class="tour-details__item">
-                            <div class="tour-details__description">
-                                <h3 class="tour-details__name item-name">
-                                    <span class="tour-details__counter">
-                                        10
-                                    </span>
-                                    Едем в аэропорт Кутаиси
-                                </h3>
-                                <ul class="tour-details__timetable">
-                                    <li class="tour-details__todo">
-                                        Утро: завтрак при отеле Daisi Sunset Hotel 3*
-                                    </li>
-                                    <li class="tour-details__todo">
-                                        День: Каньон Окаце, Аэропорт «Кутаиси», летим домой!
-                                    </li>
-                                </ul>
-                                <p class="tour-details__text description-text">
-                                    После завтрака в отеле мы прогуляемся по городу и отправимся в соседней город —
-                                    Кутаиси. По пути посетим каньон Окаце и завершим наше путешествие в аэропорту,
-                                    сказав до скорой встречи друг другу и этой удивительной стране замечательных людей,
-                                    впечатляющих видов и самой вкусной кухни!
-                                </p>
-                            </div>
-                            <picture>
-                                <source type="image/webp" media="(min-width: 1100px)"
-                                    srcset="assets/img/lead-up-desktop.webp">
-                                <source type="image/webp" media="(min-width: 768px)"
-                                    srcset="assets/img/lead-up-tablet.webp">
-                                <source type="image/webp" srcset="assets/img/lead-up-mobile.webp">
-                                <source media="(min-width: 1100px)" srcset="assets/img/lead-up-desktop.png">
-                                <source media="(min-width: 768px)" srcset="assets/img/lead-up-tablet.png">
-                                <img src="assets/img/lead-up-mobile.png" alt="Документы" class="tour-details__image">
-                            </picture>
-                        </li>
-                    </ul>
-                </article>
+                        Ту сторону Грузии, которую не показывают обычные гиды. Но ту, которая является душой Грузии в гораздо большей степени, чем места для туристов :)
+            </p>
+            </header>
+            <article class="tour-details">
+                <ul class="tour-details__list">
+                    <li class="tour-details__item">
+                        <div class="tour-details__description">
+                            <h3 class="tour-details__name item-name">
+                                <span class="tour-details__counter">
+                                    1
+                                </span>
+                                Подготовка
+                            </h3>
+                            <p class="tour-details__text description-text">
+                                Мы заранее создадим чат вконтакте для участников тура, в котором все смогут
+                                познакомиться и получить всю необходимую информацию. Сбор участников происходит в
+                                аэропорту вылета города Москвы
+                            </p>
+                        </div>
+                        <picture>
+                            <source type="image/webp" media="(min-width: 1100px)"
+                                srcset="assets/img/lead-up-desktop.webp">
+                            <source type="image/webp" media="(min-width: 768px)"
+                                srcset="assets/img/lead-up-tablet.webp">
+                            <source type="image/webp" srcset="assets/img/lead-up-mobile.webp">
+                            <source media="(min-width: 1100px)" srcset="assets/img/lead-up-desktop.png">
+                            <source media="(min-width: 768px)" srcset="assets/img/lead-up-tablet.png">
+                            <img src="assets/img/lead-up-mobile.png" alt="Документы" class="tour-details__image">
+                        </picture>
+                    </li>
+                    <li class="tour-details__item">
+                        <div class="tour-details__description">
+                            <h3 class="tour-details__name item-name">
+                                <span class="tour-details__counter">
+                                    2
+                                </span>
+                                Встреча в Тбилиси
+                            </h3>
+                            <ul class="tour-details__timetable">
+                                <li class="tour-details__todo">
+                                    Утро: аэропорт Шота Руставели-отель Flamingo Hotel 3*
+                                </li>
+                                <li class="tour-details__todo">
+                                    День: «Старый город», парк Рике, мост Мира, крепость Нарикала, ресторан
+                                    «Маспендзелло».
+                                </li>
+                                <li class="tour-details__todo">
+                                    Ночь: Flamingo Hotel 3*
+                                </li>
+                            </ul>
+                            <p class="tour-details__text description-text">
+                                Готовы к идеальному отпуску? Тогда начинаем! Отдохнем после перелета и отправимся на
+                                первую прогулку по городу. Лучший вид
+                                на столицу открывается здесь с горы Мтацминда.
+                            </p>
+                        </div>
+                        <picture>
+                            <source type="image/webp" media="(min-width: 1100px)"
+                                srcset="assets/img/meeting-desktop.webp">
+                            <source type="image/webp" media="(min-width: 768px)"
+                                srcset="assets/img/meeting-tablet.webp">
+                            <source type="image/webp" srcset="assets/img/meeting-mobile.webp">
+                            <source media="(min-width: 1100px)" srcset="assets/img/meeting-desktop.png">
+                            <source media="(min-width: 768px)" srcset="assets/img/meeting-tablet.png">
+                            <img src="assets/img/meeting-mobile.png" alt="Встреча" class="tour-details__image">
+                        </picture>
+                    </li>
+                    <li class="tour-details__item">
+                        <div class="tour-details__description">
+                            <h3 class="tour-details__name item-name">
+                                <span class="tour-details__counter">
+                                    3
+                                </span>
+                                Экскурсии по городу
+                            </h3>
+                            <ul class="tour-details__timetable">
+                                <li class="tour-details__todo">
+                                    Утро: завтрак при отеле Flamingo Hotel 3*
+                                </li>
+                                <li class="tour-details__todo">
+                                    День: собор Цминда Самеба, Сололаки, Серные бани, Клдисубани, Церковь Метехи,
+                                    Сурб Геворк Екегетси и др.
+                                </li>
+                                <li class="tour-details__todo">
+                                    Ночь: Flamingo Hotel 3*
+                                </li>
+                            </ul>
+                            <p class="tour-details__text description-text">
+                                Второй день в Тбилиси станет очень богатым на эмоции. Мы будем гулять и
+                                фотографировать город. Вы удивитесь, насколько вдохновляющими могут быть архитектура
+                                города и его жители. Экскурсия с гидом подарит массу впечатлений и новые знания.
+                            </p>
+                        </div>
+                        <picture>
+                            <source type="image/webp" media="(min-width: 1100px)"
+                                srcset="assets/img/excursion-desktop.webp">
+                            <source type="image/webp" media="(min-width: 768px)"
+                                srcset="assets/img/excursion-tablet.webp">
+                            <source type="image/webp" srcset="assets/img/excursion-mobile.webp">
+                            <source media="(min-width: 1100px)" srcset="assets/img/excursion-desktop.png">
+                            <source media="(min-width: 768px)" srcset="assets/img/excursion-tablet.png">
+                            <img src="assets/img/excursion-mobile.png" alt="Экскурсии" class="tour-details__image">
+                        </picture>
+                    </li>
+                    <li class="tour-details__item">
+                        <div class="tour-details__description">
+                            <h3 class="tour-details__name item-name">
+                                <span class="tour-details__counter">
+                                    4
+                                </span>
+                                Дорога в горы!
+                            </h3>
+                            <ul class="tour-details__timetable">
+                                <li class="tour-details__todo">
+                                    Утро: завтрак при отеле Flamingo Hotel 3*
+                                </li>
+                                <li class="tour-details__todo">
+                                    День: город Мцхета, храм Светицховели, монастырь Джвари, Военно-Грузинская
+                                    дорога, крепость Ананури, Жинвальское водохранилище, Крестовый перевал, Арка
+                                    Дружбы народов, долина Сно.
+                                </li>
+                                <li class="tour-details__todo">
+                                    Ночь: Hotel Sno Kazbegi 4*
+                                </li>
+                            </ul>
+                            <p class="tour-details__text description-text">
+                                Хотите убедиться, что ваши возможности безграничны? Третий день нашей поездки убедит
+                                вас в этом. Ведь мы будем покорять сложный маршрут по Военно-Грузинской дороге. Нас
+                                ждут завораживающие горные пейзажи, уникальная архитектура и захватывающие дух
+                                ущелья. Мы посетим Мцхету – древнейший город Грузии.
+                            </p>
+                        </div>
+                        <picture>
+                            <source type="image/webp" media="(min-width: 1100px)"
+                                srcset="assets/img/mountains-desktop.webp">
+                            <source type="image/webp" media="(min-width: 768px)"
+                                srcset="assets/img/mountains-tablet.webp">
+                            <source type="image/webp" srcset="assets/img/mountains-mobile.webp">
+                            <source media="(min-width: 1100px)" srcset="assets/img/mountains-desktop.png">
+                            <source media="(min-width: 768px)" srcset="assets/img/mountains-tablet.png">
+                            <img src="assets/img/mountains-mobile.png" alt="Дорога в горы" class="tour-details__image">
+                        </picture>
+                    </li>
+                    <li class="tour-details__item">
+                        <div class="tour-details__description">
+                            <h3 class="tour-details__name item-name">
+                                <span class="tour-details__counter">
+                                    5
+                                </span>
+                                Приключения на джипах
+                            </h3>
+                            <ul class="tour-details__timetable">
+                                <li class="tour-details__todo">
+                                    Утро: завтрак при отеле Hotel Sno Kazbegi 4*
+                                </li>
+                                <li class="tour-details__todo">
+                                    День: долина Сно, деревня Джута, гора Чаухи, Zeta Camping.
+                                </li>
+                                <li class="tour-details__todo">
+                                    Ночь: Hotel Sno Kazbegi 4*
+                                </li>
+                            </ul>
+                            <p class="tour-details__text description-text">
+                                Настоящее приключение для любопытных и бесстрашных путешественников! В четвертый
+                                день нашей поездки вы получите противоположные по полярности эмоции. Подъем на
+                                джипах до высокогорного поселка Джута будет проходить по дороге, вьющейся над
+                                ущельем.
+                            </p>
+                        </div>
+                        <picture>
+                            <source type="image/webp" media="(min-width: 1100px)"
+                                srcset="assets/img/jeep-adv-desktop.webp">
+                            <source type="image/webp" media="(min-width: 768px)"
+                                srcset="assets/img/jeep-adv-tablet.webp">
+                            <source type="image/webp" srcset="assets/img/jeep-adv-mobile.webp">
+                            <source media="(min-width: 1100px)" srcset="assets/img/jeep-adv-desktop.png">
+                            <source media="(min-width: 768px)" srcset="assets/img/jeep-adv-tablet.png">
+                            <img src="assets/img/jeep-adv-mobile.png" alt="Приключения на джипах"
+                                class="tour-details__image">
+                        </picture>
+                    </li>
+                    <li class="tour-details__item">
+                        <div class="tour-details__description">
+                            <h3 class="tour-details__name item-name">
+                                <span class="tour-details__counter">
+                                    6
+                                </span>
+                                С видом на велий Казбек
+                            </h3>
+                            <ul class="tour-details__timetable">
+                                <li class="tour-details__todo">
+                                    Утро: завтрак при отеле Hotel Sno Kazbegi 4*
+                                </li>
+                                <li class="tour-details__todo">
+                                    День: Степанцминда, храм Святой Троицы, долина горы Казбек, Rooms Hotel
+                                </li>
+                                <li class="tour-details__todo">
+                                    Ночь: Flamingo Hotel 3*
+                                </li>
+                            </ul>
+                            <p class="tour-details__text description-text">
+                                Редкие моменты в жизни хочется остановить. Пятый день нашего фототура даст нам такую
+                                возможность. Сразу после завтрака мы отправимся в апарт-отель Rooms. Отсюда
+                                открывается немыслимый вид на гору Казбек. Это основная причина, по которой сюда
+                                съезжаются туристы со всех стран.
+                            </p>
+                        </div>
+                        <picture>
+                            <source type="image/webp" media="(min-width: 1100px)"
+                                srcset="assets/img/kazbek-desktop.webp">
+                            <source type="image/webp" media="(min-width: 768px)" srcset="assets/img/kazbek-tablet.webp">
+                            <source type="image/webp" srcset="assets/img/kazbek-mobile.webp">
+                            <source media="(min-width: 1100px)" srcset="assets/img/kazbek-desktop.png">
+                            <source media="(min-width: 768px)" srcset="assets/img/kazbek-tablet.png">
+                            <img src="assets/img/kazbek-mobile.png" alt="Гора Казбек" class="tour-details__image">
+                        </picture>
+                    </li>
+                    <li class="tour-details__item">
+                        <div class="tour-details__description">
+                            <h3 class="tour-details__name item-name">
+                                <span class="tour-details__counter">
+                                    7
+                                </span>
+                                Отдыхаем после гор и отправляемся в Батуми
+                            </h3>
+                            <ul class="tour-details__timetable">
+                                <li class="tour-details__todo">
+                                    Утро: завтрак в грузинском кафе
+                                </li>
+                                <li class="tour-details__todo">
+                                    День: гуляем по Тбилиси, едем в Батуми на двухэтажном поезде.
+                                </li>
+                                <li class="tour-details__todo">
+                                    Ночь: Daisi Sunset Hotel 3*
+                                </li>
+                            </ul>
+                            <p class="tour-details__text description-text">
+                                Этот день мы решили сделать свободным. После завтрака в уютном грузинском кафе у вас
+                                будет свободное время, чтобы купить сувениры, погулять по городу и насладиться
+                                прекрасной погодой. Вечером в 17:30 мы садимся на двухэтажный скоростной поезд до
+                                Батуми.
+                            </p>
+                        </div>
+                        <picture>
+                            <source type="image/webp" media="(min-width: 1100px)"
+                                srcset="assets/img/relaxation-desktop.webp">
+                            <source type="image/webp" media="(min-width: 768px)"
+                                srcset="assets/img/relaxation-tablet.webp">
+                            <source type="image/webp" srcset="assets/img/relaxation-mobile.webp">
+                            <source media="(min-width: 1100px)" srcset="assets/img/relaxation-desktop.png">
+                            <source media="(min-width: 768px)" srcset="assets/img/relaxation-tablet.png">
+                            <img src="assets/img/relaxation-mobile.png" alt="Отдых" class="tour-details__image">
+                        </picture>
+                    </li>
+                    <li class="tour-details__item">
+                        <div class="tour-details__description">
+                            <h3 class="tour-details__name item-name">
+                                <span class="tour-details__counter">
+                                    8
+                                </span>
+                                В радушном Батуми
+                            </h3>
+                            <ul class="tour-details__timetable">
+                                <li class="tour-details__todo">
+                                    Утро: Завтрак при отеле Daisi Sunset Hotel 3*
+                                </li>
+                                <li class="tour-details__todo">
+                                    День: Исследуем город, катаемся на яхте
+                                </li>
+                                <li class="tour-details__todo">
+                                    Ночь: Daisi Sunset Hotel 3*
+                                </li>
+                            </ul>
+                            <p class="tour-details__text description-text">
+                                Романтичный, энергичный, толерантный, с выходом к морю и просто созданный для
+                                стрит-съемки. Батуми мы откроем с разных сторон. Здесь будет море, солнце,
+                                доброжелательные улыбки, вкусная еда и бирюзовые волны. Город контрастов сам
+                                подскажет вам лучшие сюжеты для фото. Гуляйте, ищите, всматривайтесь и влюбляйтесь в
+                                этот безумно контрастный город.
+                            </p>
+                        </div>
+                        <picture>
+                            <source type="image/webp" media="(min-width: 1100px)"
+                                srcset="assets/img/batumi-desktop.webp">
+                            <source type="image/webp" media="(min-width: 768px)" srcset="assets/img/batumi-tablet.webp">
+                            <source type="image/webp" srcset="assets/img/batumi-mobile.webp">
+                            <source media="(min-width: 1100px)" srcset="assets/img/batumi-desktop.png">
+                            <source media="(min-width: 768px)" srcset="assets/img/batumi-tablet.png">
+                            <img src="assets/img/batumi-mobile.png" alt="Батуми" class="tour-details__image">
+                        </picture>
+                    </li>
+                    <li class="tour-details__item">
+                        <div class="tour-details__description">
+                            <h3 class="tour-details__name item-name">
+                                <span class="tour-details__counter">
+                                    9
+                                </span>
+                                Закрывающий, но не последний
+                            </h3>
+                            <ul class="tour-details__timetable">
+                                <li class="tour-details__todo">
+                                    Утро: завтрак при отеле Daisi Sunset Hotel 3*
+                                </li>
+                                <li class="tour-details__todo">
+                                    День: Батумский ботанический сад, свободный вечер.
+                                </li>
+                                <li class="tour-details__todo">
+                                    Ночь: Daisi Sunset Hotel 3*
+                                </li>
+                            </ul>
+                            <p class="tour-details__text description-text">
+                                В этот день мы отправимся в Батумский ботанический сад — уникальное место с
+                                реликтовыми деревьями, он станет настоящим откровением для любителей природы. Сад
+                                расположен в 9 км от Батуми. Это не так далеко, но впечатлений масса. Еще с
+                                советских времен этот парк считается крупнейшим.
+                            </p>
+                        </div>
+                        <picture>
+                            <source type="image/webp" media="(min-width: 1100px)"
+                                srcset="assets/img/garden-desktop.webp">
+                            <source type="image/webp" media="(min-width: 768px)" srcset="assets/img/garden-tablet.webp">
+                            <source type="image/webp" srcset="assets/img/garden-mobile.webp">
+                            <source media="(min-width: 1100px)" srcset="assets/img/garden-desktop.png">
+                            <source media="(min-width: 768px)" srcset="assets/img/garden-tablet.png">
+                            <img src="assets/img/garden-mobile.png" alt="Сад" class="tour-details__image">
+                        </picture>
+                    </li>
+                    <li class="tour-details__item">
+                        <div class="tour-details__description">
+                            <h3 class="tour-details__name item-name">
+                                <span class="tour-details__counter">
+                                    10
+                                </span>
+                                Едем в аэропорт Кутаиси
+                            </h3>
+                            <ul class="tour-details__timetable">
+                                <li class="tour-details__todo">
+                                    Утро: завтрак при отеле Daisi Sunset Hotel 3*
+                                </li>
+                                <li class="tour-details__todo">
+                                    День: Каньон Окаце, Аэропорт «Кутаиси», летим домой!
+                                </li>
+                            </ul>
+                            <p class="tour-details__text description-text">
+                                После завтрака в отеле мы прогуляемся по городу и отправимся в соседней город —
+                                Кутаиси. По пути посетим каньон Окаце и завершим наше путешествие в аэропорту,
+                                сказав до скорой встречи друг другу и этой удивительной стране замечательных людей,
+                                впечатляющих видов и самой вкусной кухни!
+                            </p>
+                        </div>
+                        <picture>
+                            <source type="image/webp" media="(min-width: 1100px)"
+                                srcset="assets/img/lead-up-desktop.webp">
+                            <source type="image/webp" media="(min-width: 768px)"
+                                srcset="assets/img/lead-up-tablet.webp">
+                            <source type="image/webp" srcset="assets/img/lead-up-mobile.webp">
+                            <source media="(min-width: 1100px)" srcset="assets/img/lead-up-desktop.png">
+                            <source media="(min-width: 768px)" srcset="assets/img/lead-up-tablet.png">
+                            <img src="assets/img/lead-up-mobile.png" alt="Документы" class="tour-details__image">
+                        </picture>
+                    </li>
+                </ul>
+            </article>
             </div>
         </section>
         <article class="book-tour">
-            <form action="#" class="book-form">
+            <form action="#" class="book-form js-form js-book-form">
                 <h2 class="book-form__title title">
                     Забронировать тур
                 </h2>
                 <label for="book-form-name" class="book-form__label form-label">
                     Имя
                 </label>
-                <div class="book-form__input-block book-form__input-block--name">
-                    <svg width="16" height="16" class="book-form__icon">
+                <div class="book-form__input-block book-form__input-block--name js-name-input">
+                    <svg width="16" height="16" class="book-form__icon js-form-icon">
                         <use xlink:href="#icon-user"></use>
                     </svg>
-                    <input type="text" name="user-name" id="book-form-name" class="book-form__input form-input"
-                        placeholder="Как Вас зовут?" required>
+                    <input type="text" name="user-name" id="book-form-name" class="book-form__input form-input js-input-name"
+                        placeholder="Как Вас зовут?">
                 </div>
                 <label for="book-form-tel" class="book-form__label form-label">
                     Телефон
                 </label>
                 <div class="book-form__input-block book-form__input-block--tel">
-                    <svg width="16" height="16" class="book-form__icon">
+                    <svg width="16" height="16" class="book-form__icon js-form-icon">
                         <use xlink:href="#icon-tel"></use>
                     </svg>
-                    <input type="tel" name="user-name" id="book-form-tel" class="book-form__input form-input"
-                        placeholder="+7 (999) 999-99-99" required>
+                    <input type="tel" name="user-name" id="book-form-tel" class="book-form__input form-input js-input-tel"
+                        placeholder="+7(999) 999-99-99">
                 </div>
                 <label for="book-form-persons" class="book-form__label form-label">
                     Количество человек
                 </label>
                 <div class="book-form__input-block book-form__input-block--persons">
-                    <svg width="16" height="13" class="book-form__icon">
+                    <svg width="16" height="13" class="book-form__icon js-form-icon">
                         <use xlink:href="#icon-persons"></use>
                     </svg>
                     <input type="text" name="persons" id="book-form-persons" class="book-form__input form-input"
-                        placeholder="Сколько человек едет?" required readonly>
-                    <a href="#" class="book-form__angle"></a>
+                        placeholder="Сколько человек едет?" readonly>
+                    <span class="book-form__angle"></span>
                     <div class="book-form__dropdown dropdown-list">
                         <div class="dropdown-list__radio-block">
                             <input type="radio" name="number-persons" id="one-person"
@@ -749,6 +743,17 @@
             2019. Все права защищены
         </div>
     </footer>
+    <div class="modal js-hide">
+        <div class="modal__thanks">
+            Спасибо за заказ!
+        </div>
+        <div class="modal__info">
+            Наш менеджер свяжется с Вами в ближайшее время
+        </div>
+    </div>
+    <div class="overlay js-hide"></div>
+    <script src="libs/imask.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
