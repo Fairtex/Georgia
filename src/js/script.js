@@ -97,7 +97,7 @@ window.addEventListener('DOMContentLoaded', function () {
                     bookMask.updateValue();
                     showAndHideModal();
                 } else {
-                    alert('Ошибка! Введите имя и номер телефона!');
+                    alert('Ошибка! Заполните все поля!');
                     if (inputName.value === '' || inputName.value.length < 2) {
                         inputName.classList.add('js-form-input-error');
                     }
@@ -122,6 +122,39 @@ window.addEventListener('DOMContentLoaded', function () {
             block: 'start'
         });
     });
+
+    //анимация при скролле страницы
+    let isScrolling = false;
+    const animatedItems = document.querySelectorAll('.tour-details__item');
+
+    window.addEventListener('scroll', scrolling, false);
+
+    function scrolling() {
+        if (isScrolling === false) {
+            window.requestAnimationFrame(function () {
+                animateScrolling();
+                isScrolling = false;
+            });
+        }
+        isScrolling = true;
+    }
+
+    function animateScrolling() {
+        Array.prototype.forEach.call(animatedItems, animatedItem => {
+            if (isPartiallyVisible(animatedItem)) {
+                animatedItem.classList.add('js-item-scrolling');
+            }
+        });
+    }
+
+    function isPartiallyVisible(el) {
+        let elementBoundary = el.getBoundingClientRect();
+        let top = elementBoundary.top;
+        let bottom = elementBoundary.bottom;
+        let height = elementBoundary.height;
+        return ((top + height >= 0) && (height + window.innerHeight >= bottom));
+    }
+
 
     function toggleDropdown() {
         if (dropDownList.classList.contains('js-hide')) {
