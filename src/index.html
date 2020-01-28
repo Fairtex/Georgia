@@ -286,7 +286,7 @@
                     для себя романтичную и в то же время
                     очень энергичную Грузию.
                 </p>
-                <button class="note__btn form-btn">Заказать</button>
+                <a href="#book-now" class="note__btn form-btn js-scroll-btn">Заказать</a>
             </div>
         </article>
         <section class="tour-programm">
@@ -667,7 +667,7 @@
             </div>
         </section>
         <article class="book-tour">
-            <form action="#" class="book-form js-form js-book-form">
+            <form action="#" id="book-now" class="book-form js-form js-book-form">
                 <h2 class="book-form__title title">
                     Забронировать тур
                 </h2>
@@ -694,39 +694,39 @@
                 <label for="book-form-persons" class="book-form__label form-label">
                     Количество человек
                 </label>
-                <div class="book-form__input-block book-form__input-block--persons">
+                <div class="book-form__input-block book-form__input-block--persons js-persons">
                     <svg width="16" height="13" class="book-form__icon js-form-icon">
                         <use xlink:href="#icon-persons"></use>
                     </svg>
-                    <input type="text" name="persons" id="book-form-persons" class="book-form__input form-input"
+                    <input type="text" name="persons" id="book-form-persons" class="book-form__input form-input js-dropdown-input"
                         placeholder="Сколько человек едет?" readonly>
-                    <span class="book-form__angle"></span>
-                    <div class="book-form__dropdown dropdown-list">
+                    <span class="book-form__angle js-dropdown-angle"></span>
+                    <div class="book-form__dropdown dropdown-list js-hide js-dropdown-list">
                         <div class="dropdown-list__radio-block">
                             <input type="radio" name="number-persons" id="one-person"
                                 class="dropdown-list__radio visually-hidden">
-                            <label for="one-person" class="dropdown-list__label">
+                            <label for="one-person" class="dropdown-list__label js-dropdown-label" data-order="1 взрослый билет">
                                 Одно взрослое туристическое место
                             </label>
                         </div>
                         <div class="dropdown-list__radio-block">
                             <input type="radio" name="number-persons" id="two-person"
                                 class="dropdown-list__radio visually-hidden">
-                            <label for="two-person" class="dropdown-list__label">
+                            <label for="two-person" class="dropdown-list__label js-dropdown-label" data-order="2 взрослых билета">
                                 Два взрослых туристических места
                             </label>
                         </div>
                         <div class="dropdown-list__radio-block">
                             <input type="radio" name="number-persons" id="two-person-one-child"
                                 class="dropdown-list__radio visually-hidden">
-                            <label for="two-person-one-child" class="dropdown-list__label">
+                            <label for="two-person-one-child" class="dropdown-list__label js-dropdown-label" data-order="2 взрослых, 1 детский билет">
                                 Два взрослых туристических места и одно детское
                             </label>
                         </div>
                         <div class="dropdown-list__radio-block">
                             <input type="radio" name="number-persons" id="three-person"
                                 class="dropdown-list__radio visually-hidden">
-                            <label for="three-person" class="dropdown-list__label">
+                            <label for="three-person" class="dropdown-list__label js-dropdown-label" data-order="3 взрослых билета">
                                 Три взрослых туристических места
                             </label>
                         </div>
